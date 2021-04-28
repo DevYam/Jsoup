@@ -1,0 +1,13 @@
+version: 2
+updates:
+- package-ecosystem: maven
+  directory: "/"
+  schedule:
+    interval: daily
+  open-pull-requests-limit: 10
+  ignore:
+  - dependency-name: net.sourceforge.htmlunit:htmlunit
+    versions:
+    - 2.46.0
+    - 2.47.1
+    - 2.48.0
